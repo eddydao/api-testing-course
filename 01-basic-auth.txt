@@ -1,0 +1,8 @@
+YmJhX2FjYWRlbXk6YTEwMV9jbGFzc19zZWNyZXQ=
+
+
+// response to https://httpbin.org/basic-auth/bba_academy/a101_class_secret 
+{
+    "authenticated": true,
+    "user": "bba_academy"
+}
