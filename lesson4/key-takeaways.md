@@ -45,6 +45,7 @@ Các bước tạo test case
 - Đọc tài liệu API
 - Phân tích API
 - Viết test theo checklist (function, status code, data validation, authen/author)
+- Review testcase
 
 ## Javascript loop
 - Giúp thực hiện một đoạn code nhiều lần dựa theo một điều kiện nhất định

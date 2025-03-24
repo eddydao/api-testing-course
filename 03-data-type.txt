@@ -1,0 +1,31 @@
+1. 
+// JSON
+{
+    "planet":"Kepler-22b",
+    "distanceToEarth": 587,
+    "lifeSupport": true,
+    "occupiedNations": [
+        "Vietnam",
+        "Campuchia",
+        "Thailand"
+    ]
+}
+
+// XML
+<?xml version="1.0" encoding="UTF-8"?>
+<planet>
+    <name>Kepler-22b</name>
+    <distanceToEarth>587</distanceToEarth>
+    <lifeSupport>true</lifeSupport>
+    <occupiedNations>
+        <occupiedNation>Vietnam</occupiedNation>
+        <occupiedNation>Campuchia</occupiedNation>
+        <occupiedNation>Thailand</occupiedNation>
+    </occupiedNations>
+</planet>
+
+
+2. JSON tối ưu hơn XML do:
+- XML sử dụng tag để biểu diễn các phần tử, làm tăng kích thước dữ liệu cần truyền đi trong mỗi request
+- JSON dễ đọc, có support cho kiểu số, boolean, array, object, null
+- JSON không có closing tag, giảm các trường hợp format sai
