@@ -22,7 +22,7 @@
 - Ứng dụng:
   - Chạy nhiều request với nhiều dữ liệu một cách nhanh chóng
 
-### Dynamic var
+### Dynamic variable
 
 Một số biến có sẵn của postman dùng để sinh ra dữ liệu động
 Sử dụng: `{{$var}}`
@@ -36,6 +36,7 @@ Tham khảo: variable-list // postman
 - pre-req ->  Client -> Server -> Client -> post res
 
 #### Pre-request
+- Script sử dụng để thực hiện các thao tác trước khi gửi request
 
 ![alt text](pre-req.png)
 
@@ -67,22 +68,21 @@ if(!accessToken){
 ```
 
 #### Post-response
+- Script sử dụng để thực hiện các thao tác sau khi nhận response
+- Thường dùng để thực hiện set biến môi trường, viết test kiểm thử response data.
 
-![alt text](post-res.png)
+![alt text](image-2.png)
 
-pm.response
-pm.test
-pm.expect
-pm.visualizer
+- Một số function thường dùng của postman cho post-response:
+    pm.response: lấy response
+    pm.test: thực hiện test kiểm thử
+    pm.expect: expect data ( ~assert trong Java unit test)
+    pm.visualizer: dùng để tạo template để hiển thị kết quả
 
 ## Visualization
-
 Tạo template ( dạng html)
+![alt text](image-3.png)
+
 Lấy dữ liệu từ response
 Set cho template với pm.visualizer.set('template', data);
-
-## Body
-
-## API document
-
-
+![alt text](image-4.png)
